@@ -1,0 +1,82 @@
+#jvelha{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 147px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    position: absolute;
+    left: 100px;
+    top: 80px;
+}
+
+#dvcomeca{
+    font-size: 20px;
+    position: absolute;
+    left: 120px;
+    top: 12px;
+    font-family: sans-serif;
+}
+
+button{
+    background: rgb(2, 99, 2);
+    padding: 5px 15px;
+    color: white;
+    border: 2px solid rgb(19 175 5);
+    border-radius: 11px;
+    box-shadow: 0px 0px 5px 1px #15ff00f5;
+}
+
+button:hover{
+    filter: opacity(0.7);
+    color: white;
+}
+
+#dv1, #dv2, #dv3, #dv4, #dv5, #dv6, #dv7, #dv8, #dv9{
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+#dv1 {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#dv2{
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#dv3{
+    border-bottom: 2px solid black;
+}
+
+#dv4{
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#dv5{
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#dv6{
+    border-bottom: 2px solid black;
+}
+
+#dv7{
+    border-right: 2px solid black;
+}
+
+#dv8{
+    border-right: 2px solid black;
+}
+
