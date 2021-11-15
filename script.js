@@ -23,6 +23,57 @@ function jogadaCPU(cpup, evitap){
         cpuj = Math.round(Math.random()*9)
         jogadaCPU(cpuj, evitap)
     } else {
+        //ATAQUE
+        if(pos[1].innerText == 'O' && pos[2].innerText == 'O' && pos[3].innerText == ''){
+            pos[3].innerText = 'O'
+        } else if(pos[1].innerText == 'O' && pos[2].innerText == '' && pos[3].innerText == 'O'){
+            pos[2].innerText = 'O'
+        } else if(pos[1].innerText == '' && pos[2].innerText == 'O' && pos[3].innerText == 'O'){
+            pos[1].innerText = 'O'
+        } else if(pos[4].innerText == 'O' && pos[5].innerText == 'O' && pos[6].innerText == ''){
+            pos[6].innerText = 'O'
+        } else if(pos[4].innerText == 'O' && pos[5].innerText == '' && pos[6].innerText == 'O'){
+            pos[5].innerText = 'O'
+        } else if(pos[4].innerText == '' && pos[5].innerText == 'O' && pos[6].innerText == 'O'){
+            pos[4].innerText = 'O'
+        } else if(pos[7].innerText == 'O' && pos[8].innerText == 'O' && pos[9].innerText == '') {
+            pos[9].innerText = 'O'
+        } else if(pos[7].innerText == 'O' && pos[8].innerText == '' && pos[9].innerText == 'O'){
+            pos[8].innerText = 'O'
+        } else if(pos[7].innerText == '' && pos[8].innerText == 'O' && pos[9].innerText == 'O'){
+            pos[7].innerText = 'O'
+        } else if(pos[1].innerText == 'O' && pos[4].innerText == 'O' && pos[7].innerText == ''){
+            pos[7].innerText = 'O'
+        } else if(pos[1].innerText == 'O' && pos[4].innerText == '' && pos[7].innerText == 'O'){
+            pos[4].innerText = 'O'
+        } else if(pos[1].innerText == '' && pos[4].innerText == 'O' && pos[7].innerText == 'O'){
+            pos[1].innerText = 'O'
+        } else if(pos[2].innerText == 'O' && pos[5].innerText == 'O' && pos[8].innerText == ''){
+            pos[8].innerText = 'O'
+        } else if(pos[2].innerText == 'O' && pos[5].innerText == '' && pos[8].innerText == 'O'){
+            pos[5].innerText = 'O'
+        } else if(pos[2].innerText == '' && pos[5].innerText == 'O' && pos[8].innerText == 'O'){
+            pos[2].innerText = 'O'
+        } else if(pos[3].innerText == 'O' && pos[6].innerText == 'O' && pos[9].innerText == ''){
+            pos[9].innerText = 'O'
+        } else if(pos[3].innerText == 'O' && pos[6].innerText == '' && pos[9].innerText == 'O'){
+            pos[6].innerText = 'O'
+        } else if(pos[3].innerText == '' && pos[6].innerText == 'O' && pos[9].innerText == 'O'){
+            pos[3].innerText = 'O'
+        } else if(pos[1].innerText == 'O' && pos[5].innerText == 'O' && pos[9].innerText == ''){
+            pos[9].innerText = 'O'
+        } else if(pos[1].innerText == 'O' && pos[5].innerText == '' && pos[9].innerText == 'O'){
+            pos[5].innerText = 'O'
+        } else if(pos[1].innerText == '' && pos[5].innerText == 'O' && pos[9].innerText == 'O'){
+            pos[1].innerText = 'O'
+        } else if(pos[3].innerText == 'O' && pos[5].innerText == 'O' && pos[7].innerText == ''){
+            pos[7].innerText = 'O'
+        } else if(pos[3].innerText == 'O' && pos[5].innerText == '' && pos[7].innerText == 'O'){
+            pos[5].innerText = 'O'
+        } else if(pos[3].innerText == '' && pos[5].innerText == 'O' && pos[7].innerText == 'O'){
+            pos[3].innerText = 'O'
+        }
+        //DEFESA
         if(pos[1].innerText == 'X' && pos[2].innerText == 'X' && pos[3].innerText == ''){
             pos[3].innerText = 'O'
         } else if(pos[1].innerText == 'X' && pos[2].innerText == '' && pos[3].innerText == 'X'){
